@@ -4,6 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/campaign-whisperer/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './'),

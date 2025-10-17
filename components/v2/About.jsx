@@ -58,7 +58,7 @@ export default function About() {
                     <div className="absolute inset-0 bg-gradient-to-t from-purple-900/5 via-transparent to-violet-100/10 z-10"></div>
 
                     <img
-                        src="/images/me.jpg"
+                        src="./images/me.jpg"
                         alt="דניאל קרנירו"
                         className="w-full h-full object-contain object-center"
                         style={{

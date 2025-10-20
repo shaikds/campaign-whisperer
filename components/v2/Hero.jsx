@@ -32,19 +32,19 @@ export default function Hero() {
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-violet-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-center animate-hero-enter">
           
           <div className="text-center md:text-right">
-            <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
               מקמפיינר <span className="text-transparent bg-clip-text bg-gradient-to-l from-purple-400 via-violet-400 to-purple-300">שקוף</span>,<br/>לשותף עסקי שאי אפשר בלעדיו
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-xl mx-auto md:mx-0 animate-fade-in-delay">
+            <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-xl mx-auto md:mx-0">
               בוא להפוך מקמפיינר “טכני” לקמפיינר אמיתי, ששותף לערך, לאסטרטגיה ולשיווק שמייצר ערך אמיתי, שמצדיק ריטיינר גבוה יותר ובונה קריירה רווחית ויציבה.
             </p>
-            <p className="text-xl font-bold text-center text-white my-8 animate-fade-in-delay-2">
+            <p className="text-xl font-bold text-center text-white my-8 animate-fade-in-delay-2 bg-gradient-to-r from-purple-100/20 to-violet-100/20 border-r-4 border-purple-400 pr-4 py-3 rounded-md shadow-lg backdrop-blur-sm">
              "קמפיינר מקצועי יותר = מכניס יותר כסף ללקוח = מכניס יותר כסף לעצמך"
             </p>
-            <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-xl mx-auto md:mx-0 animate-fade-in-delay-3">
+            <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-xl mx-auto md:mx-0">
               <span className="font-bold">איך?</span><br/>
               נרשמים לשיחות זום 1 על 1 איתי, ובתוך מספר שיעורים, אתה כבר תרגיש את הרמה המקצועית שלך עולה.
             </p>
@@ -54,6 +54,22 @@ export default function Hero() {
 
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes hero-enter {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-hero-enter {
+          animation: hero-enter 1.2s ease-out;
+        }
+      `}</style>
     </section>
   );
 }

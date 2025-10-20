@@ -5,7 +5,7 @@ import { Send, Star, CheckCircle, AlertCircle } from 'lucide-react';
 import { sendEmail } from '../../src/services/emailService';
 
 export default function LeadForm({ id, theme = 'dark' }) {
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', marketingConsent: false });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('idle');
   const [phoneError, setPhoneError] = useState('');
@@ -56,7 +56,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
 
     if (success) {
       // Reset form on success
-      setFormData({ name: '', email: '', phone: '' });
+      setFormData({ name: '', email: '', phone: '', marketingConsent: false });
       // Auto-hide success message after 5 seconds
       setTimeout(() => setSubmitStatus('idle'), 5000);
     }
@@ -90,7 +90,8 @@ export default function LeadForm({ id, theme = 'dark' }) {
       dir="rtl"
     >
       <h3 className={`text-2xl font-bold text-center mb-2 ${currentTheme.title}`}>השאירו פרטים ובואו נדבר</h3>
-      <p className={`text-center mb-6 text-sm ${currentTheme.subtext}`}>הצעד הראשון לשינוי מתחיל כאן. השאירו פרטים לשיחת היכרות בחינם, ללא התחייבות.</p>
+      <p className={`text-center mb-6 text-base font-bold ${currentTheme.subtext}`}>הצעד הראשון לשינוי מתחיל כאן. השאירו פרטים לשיחת היכרות בחינם, ללא התחייבות.</p>
+
       <form onSubmit={handleSubmit} className="space-y-4" dir="rtl">
         <Input 
           type="text" 
@@ -123,6 +124,21 @@ export default function LeadForm({ id, theme = 'dark' }) {
         {phoneError && (
           <p className={`text-red-400 text-xs mt-1 text-right ${theme === 'light' ? 'text-red-600' : 'text-red-400'}`}>{phoneError}</p>
         )}
+
+     <div className="flex items-start gap-3 mt-4 w-full">
+          <input
+            type="checkbox"
+            id={`${id}-marketingConsent`}
+            checked={formData.marketingConsent}
+            onChange={(e) => setFormData({...formData, marketingConsent: e.target.checked})}
+            className="mt-1 min-w-[20px] min-h-[20px] w-5 h-5 text-purple-600 focus:ring-purple-500 border-gray-300 rounded flex-shrink-0 cursor-pointer"
+            required
+            style={{ accentColor: '#9333ea' }}
+          />
+          <label htmlFor={`${id}-marketingConsent`} className={`text-sm ${currentTheme.subtext} text-right leading-relaxed flex-1 cursor-pointer`}>
+            הסכמה לקבלת דיוור שיווקי
+          </label>
+        </div>
         <Button
           type="submit"
           size="lg"
@@ -134,7 +150,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
           ) : (
             <Send className="w-4 h-4 ml-2" />
           )}
-          {isSubmitting ? 'שולח...' : 'אני רוצה להתחיל ליווי ולעלות שלב'}
+          {isSubmitting ? 'שולח...' : 'אני רוצה לתאם שיחת היכרות'}
         </Button>
       </form>
 
@@ -152,10 +168,10 @@ export default function LeadForm({ id, theme = 'dark' }) {
         </div>
       )}
 
-      <div className={`mt-6 space-y-2 text-xs ${currentTheme.subtext}`}>
-        <p className="flex items-center justify-center gap-2"><Star className="w-3 h-3 text-yellow-400"/> הפגישה ללא עלות וללא התחייבות</p>
-        <p className="flex items-center justify-center gap-2"><Star className="w-3 h-3 text-yellow-400"/> השיחה מתקיימת בזום בלבד</p>
-        <p className="flex items-center justify-center gap-2"><Star className="w-3 h-3 text-yellow-400"/> מספר המקומות החודש מוגבל</p>
+      <div className={`mt-6 space-y-2 text-xs md:text-sm ${currentTheme.subtext} flex flex-col items-center`}>
+        <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> שיחת היכרות ללא עלות וללא התחייבות</p>
+        <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> הליווי מתקיים בזום בלבד</p>
+        <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> מספר המקומות לליווי אישי מוגבל</p>
       </div>
     </div>
   );

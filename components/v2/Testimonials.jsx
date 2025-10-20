@@ -7,8 +7,8 @@ const testimonials = [
       text: "אני עובד עם דניאל כבר 3-4 חודשים ורוצה להמליץ בחום... לפני שהכרתי אותו הייתי סתם זורק כסף על קמפיינים בלי להבין מה קורה, הוא פשוט עזר לי לראות את הדברים אחרת, להבין איך לקרוא את המספרים ולא לבזבז זמן על שטויות.",
     },
     {
-      name: "יון",
-      text: "אני רוצה לתת לכם המלצה חמה על דניאל קרנירו, אחד הטובים בארץ. קמפיינר אמיתי, מקצוען על, מי שיכנס איתו לליווי – רק ירוויח.",
+      name: "ינון",
+      text: "אני רוצה לתת לכם המלצה חמה על דניאל קרנירו, אחד הטובים בארץ. קמפיינר אמיתי, מקצוען על, מי שיכנס איתו לליווי - רק ירוויח.",
     }
 ];
 
@@ -99,21 +99,21 @@ export default function Testimonials() {
           </button>
         </div>
 
-        {/* Dot Indicators */}
-        <div className="flex justify-center gap-2 mt-8">
-          {testimonials.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`transition-all duration-300 rounded-full ${
-                index === currentIndex 
-                  ? 'bg-purple-600 w-8 h-3 shadow-lg' 
-                  : 'bg-purple-300 w-3 h-3 hover:bg-purple-400'
-              }`}
-              aria-label={`Go to testimonial ${index + 1}`}
-            />
-          ))}
-        </div>
+  {/* Dot Indicators */}
+<div className="flex justify-center gap-2 mt-8 scale-[0.3] md:scale-100">
+  {testimonials.map((_, index) => (
+    <button
+      key={index}
+      onClick={() => setCurrentIndex(index)}
+      className={`transition-all duration-300 rounded-full ${
+        index === currentIndex
+          ? 'bg-purple-600 w-6 h-2 shadow-lg'
+          : 'bg-purple-300 w-2 h-2 hover:bg-purple-400'
+      }`}
+      aria-label={`Go to testimonial ${index + 1}`}
+    />
+  ))}
+</div>
       </div>
 
       <style jsx>{`

@@ -40,7 +40,7 @@ export default function Faq() {
         <div className="absolute bottom-40 left-1/3 text-violet-400/15 text-4xl font-bold animate-pulse" style={{animationDelay: '3s'}}>?</div>
       </div>
 
-      <div className="container mx-auto px-4 max-w-3xl relative">
+      <div className="container mx-auto px-4 max-w-3xl relative flex flex-col items-center">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3 animate-fade-in">
             שאלות נפוצות
@@ -49,7 +49,7 @@ export default function Faq() {
             כל מה שאתה צריך לדעת לפני שמתחילים
           </p>
         </div>
-        <Accordion type="single" collapsible className="w-full space-y-3">
+        <Accordion type="single" collapsible className="w-full max-w-2xl space-y-3 mx-auto">
           {faqs.map((faq, i) => (
             <AccordionItem
               key={i}

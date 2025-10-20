@@ -12,8 +12,8 @@ import Footer from '../components/v2/Footer';
 
 export default function HomePage() {
   return (
-    <div className="bg-gray-900 text-gray-200 font-sans" dir="rtl">
-      <main>
+    <div className="bg-gray-900 text-gray-200 font-sans min-h-screen flex flex-col" dir="rtl">
+      <main className="flex-1 w-full max-w-screen-2xl mx-auto">
         <Hero />
         <About />
         <Benefits />

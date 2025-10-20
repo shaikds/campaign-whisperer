@@ -27,11 +27,21 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '20'
         cache: 'npm'
 
+    - name: Clear npm cache
+      run: npm cache clean --force
+
     - name: Install dependencies
-      run: npm ci --legacy-peer-deps
+      timeout-minutes: 10
+      run: |
+        echo "Starting dependency installation..."
+        npm ci --legacy-peer-deps --verbose || {
+          echo "npm ci failed, trying npm install as fallback..."
+          rm -rf node_modules package-lock.json
+          npm install --legacy-peer-deps
+        }
 
     - name: Build
       run: npm run build

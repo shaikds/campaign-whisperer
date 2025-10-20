@@ -22,7 +22,7 @@ export default function Audience() {
         <div className="absolute bottom-40 left-20 w-5 h-5 bg-gradient-to-r from-violet-300/60 to-purple-400/60 rotate-45 animate-spin" style={{animationDuration: '15s'}}></div>
       </div>
 
-      <div className="container mx-auto px-4 relative">
+      <div className="max-w-7xl mx-auto px-4 relative">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div>
             <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 animate-slide-in-left">

@@ -149,6 +149,7 @@ html {
 /* Mobile-optimized components */
 @layer components {
   .container {
+    width: 100%;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -181,6 +182,12 @@ html {
   @media (min-width: 1280px) {
     .container {
       max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
     }
   }
 
@@ -303,6 +310,27 @@ a:focus-visible {
 .hebrew-text {
   font-weight: 500;
   letter-spacing: 0.01em;
+}
+
+/* Full-width section fixes for GitHub Pages deployment */
+section {
+  width: 100%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure main containers take full width */
+main {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* GitHub Pages specific fixes */
+.github-pages-fix {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
 }
 
 /* Better button hover states for mobile */

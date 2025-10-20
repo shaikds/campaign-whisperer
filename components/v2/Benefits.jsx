@@ -50,7 +50,7 @@ export default function Benefits() {
         <div className="absolute top-40 right-10 w-2 h-20 bg-gradient-to-t from-purple-400/30 to-transparent animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 animate-fade-in">
             מה תקבלו בליווי 1 על 1?

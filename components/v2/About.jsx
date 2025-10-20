@@ -16,7 +16,7 @@ export default function About() {
         <div className="absolute top-20 right-1/3 w-2 h-12 bg-gradient-to-t from-purple-300/40 to-transparent animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
 
-      <div className="container mx-auto px-4 relative">
+      <div className="max-w-7xl mx-auto px-4 relative">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="order-2 md:order-1 transform hover:scale-105 transition-transform duration-500">
             <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 animate-slide-in-left">נעים להכיר, אני דניאל קרנירו</h2>

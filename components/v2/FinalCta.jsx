@@ -18,7 +18,7 @@ export default function FinalCta() {
         <div className="absolute top-20 right-1/4 w-3 h-16 bg-gradient-to-t from-purple-400/40 to-transparent animate-pulse" style={{animationDelay: '3s'}}></div>
       </div>
 
-      <div className="container mx-auto px-4 text-center relative">
+      <div className="max-w-4xl mx-auto px-4 text-center relative">
         <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 animate-fade-in">
           מוכנים לעלות ברמה ולהרוויח יותר?
         </h2>

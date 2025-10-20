@@ -40,7 +40,7 @@ export default function Faq() {
         <div className="absolute bottom-40 left-1/3 text-violet-400/15 text-4xl font-bold animate-pulse" style={{animationDelay: '3s'}}>?</div>
       </div>
 
-      <div className="container mx-auto px-4 max-w-3xl relative flex flex-col items-center">
+      <div className="max-w-3xl mx-auto px-4 relative flex flex-col items-center">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3 animate-fade-in">
             שאלות נפוצות

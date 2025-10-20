@@ -52,7 +52,7 @@ export default function Testimonials() {
         </div>
       </div>
 
-       <div className="container mx-auto px-4 relative">
+       <div className="max-w-7xl mx-auto px-4 relative">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 animate-fade-in">
             מה הקמפיינרים אומרים על הליווי?

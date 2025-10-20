@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-grid-gray-700/5 [mask-image:linear-gradient(to_bottom,white_20%,transparent_80%)]"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative">
+      <div className="max-w-7xl mx-auto px-4 relative">
         {/* Brand Title */}
         <div className="text-center mb-12 md:mb-16">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4">

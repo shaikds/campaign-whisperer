@@ -10,6 +10,9 @@ export default function Footer() {
         <p className="text-sm mt-2">
           נבנה באהבה כדי לעזור לקמפיינרים לצמוח
         </p>
+        <p className="text-sm mt-2">
+         Built by shaikds
+        </p>
       </div>
     </footer>
   );

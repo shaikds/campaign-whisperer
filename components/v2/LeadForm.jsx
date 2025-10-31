@@ -136,7 +136,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
             style={{ accentColor: '#9333ea' }}
           />
           <label htmlFor={`${id}-marketingConsent`} className={`text-sm ${currentTheme.subtext} text-right leading-relaxed flex-1 cursor-pointer`}>
-            הסכמה לקבלת דיוור שיווקי
+            אני מסכים/ה לקבל ממך עדכונים, טיפים והצעות רלוונטיות מעת לעת
           </label>
         </div>
         <Button

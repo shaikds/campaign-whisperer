@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/campaign-whisperer/',
+  base: process.env.VERCEL ? '/' : '/campaign-whisperer/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './'),

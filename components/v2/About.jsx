@@ -18,9 +18,9 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-4 relative">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-          <div className="order-2 md:order-1 transform hover:scale-105 transition-transform duration-500">
-            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 animate-slide-in-left">נעים להכיר, אני דניאל קרנירו</h2>
-            <div className="space-y-4 text-base md:text-lg text-gray-700 leading-relaxed">
+          <div className="order-2 md:order-1 transform hover:scale-105 transition-transform duration-500 text-center md:text-right">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 animate-slide-in-left">נעים להכיר, אני דניאל קרנירו</h2>
+            <div className="space-y-4 text-2xl md:text-2xl text-gray-700 leading-relaxed text-center md:text-right">
               <p className="animate-fade-in-up" style={{animationDelay: '0.3s'}}>
                 לפני כמה שנים הייתי בדיוק במקום שלך. עבדתי שעות על גבי שעות על קמפיינים, אבל אף אחד לא באמת הבין כמה אחריות יש על הכתפיים של קמפיינר. לקוחות דרשו תוצאות, מנהלים לחצו, ובסוף - גם כשהכול עבד, עדיין הרגשתי שקוף.
               </p>

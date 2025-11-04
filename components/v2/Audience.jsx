@@ -24,27 +24,27 @@ export default function Audience() {
 
       <div className="max-w-7xl mx-auto px-4 relative">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-          <div>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 animate-slide-in-left">
+          <div className="text-center md:text-right">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 animate-slide-in-left">
               למי הליווי מתאים?
             </h2>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8 animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+            <p className="text-2xl md:text-2xl text-gray-700 leading-relaxed mb-8 animate-fade-in-up text-center md:text-right" style={{animationDelay: '0.3s'}}>
               הליווי נועד לקמפיינרים שרוצים להפסיק להיות 'מפעילי קמפיינים' - ולהתחיל לחשוב כמו אסטרטגים אמיתיים.
               לאלה שכבר יודעים איך להריץ קמפיינים, אבל רוצים להבין את ה'למה' שמאחוריהם - ואיך לקחת שליטה מלאה על התוצאות, הזמן והערך שלהם מול הלקוחות.
             </p>
-            <p className="text-lg md:text-xl text-gray-800 font-semibold animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+            <p className="text-2xl md:text-2xl text-gray-800 font-semibold animate-fade-in-up text-center md:text-right" style={{animationDelay: '0.4s'}}>
               אם אתה:
             </p>
           </div>
           <div className="space-y-4">
             {whoIsItFor.map((point, i) => (
-              <div 
-                key={i} 
-                className="flex items-start md:items-center gap-4 bg-white/80 backdrop-blur-sm border border-purple-200/50 rounded-lg p-4 shadow-lg hover:shadow-xl hover:scale-105 hover:bg-purple-50/50 transition-all duration-300 animate-slide-in-right"
+              <div
+                key={i}
+                className="flex flex-col md:flex-row items-center md:items-center gap-4 bg-white/80 backdrop-blur-sm border border-purple-200/50 rounded-lg p-4 shadow-lg hover:shadow-xl hover:scale-105 hover:bg-purple-50/50 transition-all duration-300 animate-slide-in-right text-center md:text-right"
                 style={{animationDelay: `${i * 0.1 + 0.5}s`}}
               >
-                <CheckCircle className="w-8 h-8 md:w-8 md:h-8 text-purple-600 flex-shrink-0 mt-1 md:mt-0" />
-                <span className="text-base md:text-lg text-gray-800">{point}</span>
+                <CheckCircle className="w-8 h-8 md:w-8 md:h-8 text-purple-600 flex-shrink-0" />
+                <span className="text-2xl md:text-2xl text-gray-800">{point}</span>
               </div>
             ))}
           </div>

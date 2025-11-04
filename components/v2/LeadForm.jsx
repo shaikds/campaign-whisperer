@@ -89,8 +89,8 @@ export default function LeadForm({ id, theme = 'dark' }) {
       className={`backdrop-blur-xl rounded-2xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 ${theme === 'dark' ? 'animate-slide-in-right' : ''} ${currentTheme.container}`}
       dir="rtl"
     >
-      <h3 className={`text-2xl font-bold text-center mb-2 ${currentTheme.title}`}>השאירו פרטים ובואו נדבר</h3>
-      <p className={`text-center mb-6 text-base font-bold ${currentTheme.subtext}`}>הצעד הראשון לשינוי מתחיל כאן. השאירו פרטים לשיחת היכרות בחינם, ללא התחייבות.</p>
+      <h3 className={`text-3xl md:text-4xl font-bold text-center mb-2 ${currentTheme.title}`}>השאירו פרטים ובואו נדבר</h3>
+      <p className={`text-center mb-6 text-xl md:text-xl  ${currentTheme.subtext}`}>הצעד הראשון לשינוי מתחיל כאן. השאירו פרטים לשיחת היכרות בחינם, ללא התחייבות.</p>
 
       <form onSubmit={handleSubmit} className="space-y-4" dir="rtl">
         <Input 
@@ -122,7 +122,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
   required
 />
         {phoneError && (
-          <p className={`text-red-400 text-xs mt-1 text-right ${theme === 'light' ? 'text-red-600' : 'text-red-400'}`}>{phoneError}</p>
+          <p className={`text-red-400 text-sm mt-1 text-right ${theme === 'light' ? 'text-red-600' : 'text-red-400'}`}>{phoneError}</p>
         )}
 
      <div className="flex items-start gap-3 mt-4 w-full">
@@ -135,7 +135,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
             required
             style={{ accentColor: '#9333ea' }}
           />
-          <label htmlFor={`${id}-marketingConsent`} className={`text-sm ${currentTheme.subtext} text-right leading-relaxed flex-1 cursor-pointer`}>
+          <label htmlFor={`${id}-marketingConsent`} className={`text-base ${currentTheme.subtext} text-right leading-relaxed flex-1 cursor-pointer`}>
             אני מסכים/ה לקבל ממך עדכונים, טיפים והצעות רלוונטיות מעת לעת
           </label>
         </div>
@@ -156,19 +156,19 @@ export default function LeadForm({ id, theme = 'dark' }) {
 
       {/* Status Messages */}
       {submitStatus === 'success' && (
-        <div className={`mt-4 p-3 rounded-lg flex items-center gap-2 text-sm border ${currentTheme.success}`}>
+        <div className={`mt-4 p-3 rounded-lg flex items-center gap-2 text-base border ${currentTheme.success}`}>
           <CheckCircle className="w-4 h-4 flex-shrink-0" />
           <span>תודה! הפרטים נשלחו בהצלחה. נחזור אליך בקרוב!</span>
         </div>
       )}
       {submitStatus === 'error' && (
-        <div className={`mt-4 p-3 rounded-lg flex items-center gap-2 text-sm border ${currentTheme.error}`}>
+        <div className={`mt-4 p-3 rounded-lg flex items-center gap-2 text-base border ${currentTheme.error}`}>
           <AlertCircle className="w-4 h-4 flex-shrink-0" />
           <span>שגיאה בשליחה. אנא נסה שנית או צור קשר בטלפון.</span>
         </div>
       )}
 
-      <div className={`mt-6 space-y-2 text-xs md:text-sm ${currentTheme.subtext} flex flex-col items-center`}>
+      <div className={`mt-6 space-y-2 text-sm md:text-base ${currentTheme.subtext} flex flex-col items-center`}>
         <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> שיחת היכרות ללא עלות וללא התחייבות</p>
         <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> הליווי מתקיים בזום בלבד</p>
         <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> מספר המקומות לליווי אישי מוגבל</p>

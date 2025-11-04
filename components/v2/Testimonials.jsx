@@ -62,7 +62,7 @@ export default function Testimonials() {
 
        <div className="max-w-7xl mx-auto px-4 relative">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 animate-fade-in">
             מה הקמפיינרים אומרים על הליווי?
           </h2>
         </div>
@@ -84,7 +84,7 @@ export default function Testimonials() {
                   <div className="flex items-center justify-center gap-1 mb-6">
                     {[...Array(5)].map((_, j) => <Star key={j} className="w-5 h-5 text-yellow-400 fill-current" />)}
                   </div>
-                  <p className="text-gray-700 italic text-lg md:text-xl mb-8 leading-relaxed text-center" style={{ direction: 'rtl' }}>"{item.text}"</p>
+                  <p className="text-gray-700 italic text-2xl md:text-2xl mb-8 leading-relaxed text-center" style={{ direction: 'rtl' }}>"{item.text}"</p>
                   <div className="flex items-center justify-center">
                     <div className="font-bold text-gray-900 text-xl">{item.name}</div>
                   </div>

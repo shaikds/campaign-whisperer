@@ -15,7 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  font-size: 16px; /* Ensure good base font size for mobile */
+  font-size: 16px; /* Balanced base font size for readability */
 }
 
 /* RTL Support */
@@ -28,14 +28,20 @@ body {
   text-align: left;
 }
 
-/* Mobile-first responsive font sizes */
+/* Mobile-first responsive font sizes - enhanced for mobile readability */
 html {
-  font-size: 14px; /* Base size for mobile */
+  font-size: 15px; /* Slightly larger base size for mobile */
 }
 
 @media (min-width: 640px) {
   html {
     font-size: 16px; /* Larger on tablets and up */
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px; /* Desktop size */
   }
 }
 
@@ -191,37 +197,37 @@ html {
     }
   }
 
-  /* Responsive typography */
+  /* Enhanced responsive typography for better readability */
   .text-responsive-xs {
-    @apply text-xs sm:text-sm;
-  }
-
-  .text-responsive-sm {
     @apply text-sm sm:text-base;
   }
 
-  .text-responsive-base {
+  .text-responsive-sm {
     @apply text-base sm:text-lg;
   }
 
-  .text-responsive-lg {
+  .text-responsive-base {
     @apply text-lg sm:text-xl;
   }
 
-  .text-responsive-xl {
+  .text-responsive-lg {
     @apply text-xl sm:text-2xl;
   }
 
+  .text-responsive-xl {
+    @apply text-2xl sm:text-3xl;
+  }
+
   .text-responsive-2xl {
-    @apply text-xl sm:text-2xl md:text-3xl;
+    @apply text-2xl sm:text-3xl md:text-4xl;
   }
 
   .text-responsive-3xl {
-    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
   }
 
   .text-responsive-4xl {
-    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
   }
 }
 
@@ -256,7 +262,7 @@ a:focus-visible {
     overflow-x: hidden;
   }
 
-  /* Optimize font sizes for mobile reading */
+  /* Balanced font sizes for mobile reading */
   .mobile-text-adjust h1 {
     font-size: 1.75rem;
     line-height: 1.2;
@@ -273,7 +279,7 @@ a:focus-visible {
   }
 
   .mobile-text-adjust p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.5;
   }
 }

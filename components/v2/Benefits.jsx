@@ -52,25 +52,27 @@ export default function Benefits() {
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 animate-fade-in">
             מה תקבלו בליווי 1 על 1?
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 animate-fade-in-delay">
+          <p className="text-2xl md:text-2xl text-gray-300 animate-fade-in-delay">
             הליווי איתי הוא לא שיעור תאורטי - זו עבודה אמיתית על הקמפיינים שלך. בכל מפגש נתקדם צעד נוסף בדרך להפוך אותך לקמפיינר מקצועי, רגוע, שמבין לעומק את הנתונים ויודע איך לשלוט בתוצאות ובלקוחות שלו.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {benefits.map((benefit, i) => (
-            <div 
-              key={i} 
-              className="bg-gray-800/50 border border-gray-700/50 rounded-2xl p-6 md:p-8 transform hover:-translate-y-4 hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20 hover:bg-gray-800/70 animate-slide-up"
+            <div
+              key={i}
+              className="bg-gray-800/50 border border-gray-700/50 rounded-2xl p-6 md:p-8 text-center transform hover:-translate-y-4 hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20 hover:bg-gray-800/70 animate-slide-up"
               style={{animationDelay: `${i * 0.15}s`}}
             >
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-600/20 to-violet-600/20 text-purple-400 rounded-xl flex items-center justify-center border border-purple-500/30 mb-6 hover:scale-110 hover:rotate-12 transition-transform duration-300">
-                    <benefit.icon className="h-6 w-6" />
+                <div className="flex flex-col items-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-600/20 to-violet-600/20 text-purple-400 rounded-xl flex items-center justify-center border border-purple-500/30 hover:scale-110 hover:rotate-12 transition-transform duration-300 mb-4">
+                        <benefit.icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white text-center">{benefit.title}</h3>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">{benefit.title}</h3>
-                <p className="text-base md:text-lg text-gray-400">{benefit.description}</p>
+                <p className="text-2xl md:text-2xl text-gray-400 text-center">{benefit.description}</p>
             </div>
           ))}
         </div>

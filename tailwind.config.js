@@ -10,6 +10,11 @@ export default {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			'primary': ['Inter', 'Heebo', 'sans-serif'],
+  			'hebrew': ['Heebo', 'Inter', 'sans-serif'],
+  			'display': ['Inter', 'Heebo', 'sans-serif'],
+  		},
   		animation: {
   			'slide-in-right': 'slideInRight 0.5s ease-out',
   			'accordion-down': 'accordion-down 0.2s ease-out',

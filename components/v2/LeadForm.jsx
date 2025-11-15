@@ -89,14 +89,14 @@ export default function LeadForm({ id, theme = 'dark' }) {
       className={`backdrop-blur-xl rounded-2xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 ${theme === 'dark' ? 'animate-slide-in-right' : ''} ${currentTheme.container}`}
       dir="rtl"
     >
-      <h3 className={`text-3xl md:text-4xl font-bold text-center mb-2 ${currentTheme.title}`}>השאירו פרטים ובואו נדבר</h3>
-      <p className={`text-center mb-6 text-xl md:text-xl  ${currentTheme.subtext}`}>הצעד הראשון לשינוי מתחיל כאן. השאירו פרטים לשיחת היכרות בחינם, ללא התחייבות.</p>
+      <h3 className={`text-3xl md:text-3xl font-bold font-primary text-center mb-2 ${currentTheme.title}`}>השאירו פרטים ובואו נדבר</h3>
+      <p className={`text-center mb-6 text-xl md:text-lg font-medium font-primary ${currentTheme.subtext}`}>הצעד הראשון לשינוי מתחיל כאן. השאירו פרטים לשיחת היכרות בחינם, ללא התחייבות.</p>
 
       <form onSubmit={handleSubmit} className="space-y-4" dir="rtl">
         <Input 
           type="text" 
           placeholder="שם מלא" 
-          className={`h-12 rounded-lg transition-colors text-right ${currentTheme.input}`}
+          className={`h-12  text-lg rounded-lg transition-colors text-right ${currentTheme.input}`}
           dir="rtl"
           value={formData.name}
           onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -105,7 +105,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
         <Input 
           type="email" 
           placeholder="אימייל" 
-          className={`h-12 rounded-lg transition-colors text-right ${currentTheme.input}`}
+          className={`h-12 text-lg rounded-lg transition-colors text-right ${currentTheme.input}`}
           dir="rtl"
           value={formData.email}
           onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -115,7 +115,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
   type="text"
   inputMode="tel"
   placeholder="טלפון"
-  className={`h-12 rounded-lg transition-colors text-right ${currentTheme.input} ${phoneError ? 'border-red-500 focus:border-red-500' : ''}`}
+  className={`h-12 rounded-lg text-lg transition-colors text-right ${currentTheme.input} ${phoneError ? 'border-red-500 focus:border-red-500' : ''}`}
   dir="rtl"
   value={formData.phone}
   onChange={handlePhoneChange}
@@ -135,7 +135,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
             required
             style={{ accentColor: '#9333ea' }}
           />
-          <label htmlFor={`${id}-marketingConsent`} className={`text-base ${currentTheme.subtext} text-right leading-relaxed flex-1 cursor-pointer`}>
+          <label htmlFor={`${id}-marketingConsent`} className={`text-sm2 font-medium font-primary ${currentTheme.subtext} text-right leading-relaxed flex-1 cursor-pointer`}>
             אני מסכים/ה לקבל ממך עדכונים, טיפים והצעות רלוונטיות מעת לעת
           </label>
         </div>
@@ -143,7 +143,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
           type="submit"
           size="lg"
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-purple-600 to-violet-600 text-white font-bold rounded-lg h-14 hover:from-purple-700 hover:to-violet-700 hover:scale-105 transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+          className="w-full bg-gradient-to-r text-xl from-purple-600 to-violet-600 text-white font-bold font-primary rounded-lg h-14 hover:from-purple-700 hover:to-violet-700 hover:scale-105 transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
         >
           {isSubmitting ? (
             <div className="animate-spin w-4 h-4 border-2 border-white border-t-transparent rounded-full ml-2" />
@@ -156,19 +156,19 @@ export default function LeadForm({ id, theme = 'dark' }) {
 
       {/* Status Messages */}
       {submitStatus === 'success' && (
-        <div className={`mt-4 p-3 rounded-lg flex items-center gap-2 text-base border ${currentTheme.success}`}>
+        <div className={`mt-4 p-3 rounded-lg flex items-center gap-2 text-sm border ${currentTheme.success}`}>
           <CheckCircle className="w-4 h-4 flex-shrink-0" />
           <span>תודה! הפרטים נשלחו בהצלחה. נחזור אליך בקרוב!</span>
         </div>
       )}
       {submitStatus === 'error' && (
-        <div className={`mt-4 p-3 rounded-lg flex items-center gap-2 text-base border ${currentTheme.error}`}>
+        <div className={`mt-4 p-3 rounded-lg flex items-center gap-2 text-sm border ${currentTheme.error}`}>
           <AlertCircle className="w-4 h-4 flex-shrink-0" />
           <span>שגיאה בשליחה. אנא נסה שנית או צור קשר בטלפון.</span>
         </div>
       )}
 
-      <div className={`mt-6 space-y-2 text-sm md:text-base ${currentTheme.subtext} flex flex-col items-center`}>
+      <div className={`mt-6 space-y-2 text-sm2 md:text-sm2 font-medium font-primary ${currentTheme.subtext} flex flex-col items-center`}>
         <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> שיחת היכרות ללא עלות וללא התחייבות</p>
         <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> הליווי מתקיים בזום בלבד</p>
         <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> מספר המקומות לליווי אישי מוגבל</p>

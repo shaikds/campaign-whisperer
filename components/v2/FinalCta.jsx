@@ -19,10 +19,10 @@ export default function FinalCta() {
       </div>
 
       <div className="max-w-4xl mx-auto px-4 text-center relative">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 animate-fade-in">
+        <h2 className="text-5xl md:text-4xl lg:text-5xl font-black font-primary text-gray-900 mb-4 animate-fade-in">
           מוכנים לעלות ברמה ולהרוויח יותר?
         </h2>
-        <p className="text-2xl md:text-2xl text-gray-700 mb-12 max-w-2xl mx-auto animate-fade-in-delay">
+        <p className="text-2xl md:text-2xl font-medium font-primary text-gray-700 mb-12 max-w-2xl mx-auto animate-fade-in-delay">
           הצעד הראשון לשינוי מתחיל כאן. השאירו פרטים לשיחת היכרות בחינם, ללא התחייבות.
         </p>
         

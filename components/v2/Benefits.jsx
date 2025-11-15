@@ -50,16 +50,24 @@ export default function Benefits() {
         <div className="absolute top-40 right-10 w-2 h-20 bg-gradient-to-t from-purple-400/30 to-transparent animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 animate-fade-in">
+      <div className="container mx-auto px-4 relative z-10 max-w-6xl">
+        {/* Header Section - Title and Subtext Above Everything */}
+        <div className="text-center mb-20">
+          {/* Title */}
+          <h2 className="text-5xl md:text-4xl lg:text-5xl font-black font-primary text-white mb-8 animate-fade-in">
             מה תקבלו בליווי 1 על 1?
           </h2>
-          <p className="text-2xl md:text-2xl text-gray-300 animate-fade-in-delay">
-            הליווי איתי הוא לא שיעור תאורטי - זו עבודה אמיתית על הקמפיינים שלך. בכל מפגש נתקדם צעד נוסף בדרך להפוך אותך לקמפיינר מקצועי, רגוע, שמבין לעומק את הנתונים ויודע איך לשלוט בתוצאות ובלקוחות שלו.
-          </p>
+
+          {/* Subtext - Centered */}
+          <div className="mx-auto max-w-4xl">
+            <p className="text-2xl md:text-2xl font-medium font-primary text-gray-300 leading-relaxed animate-fade-in-delay">
+              הליווי איתי הוא לא שיעור תאורטי - זו עבודה אמיתית על הקמפיינים שלך. בכל מפגש נתקדם צעד נוסף בדרך להפוך אותך לקמפיינר מקצועי, רגוע, שמבין לעומק את הנתונים ויודע איך לשלוט בתוצאות ובלקוחות שלו.
+            </p>
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+        {/* Benefits Grid - Full Width Container */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-5xl">
           {benefits.map((benefit, i) => (
             <div
               key={i}
@@ -70,9 +78,9 @@ export default function Benefits() {
                     <div className="w-12 h-12 bg-gradient-to-br from-purple-600/20 to-violet-600/20 text-purple-400 rounded-xl flex items-center justify-center border border-purple-500/30 hover:scale-110 hover:rotate-12 transition-transform duration-300 mb-4">
                         <benefit.icon className="h-6 w-6" />
                     </div>
-                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white text-center">{benefit.title}</h3>
+                    <h3 className="text-2xl md:text-2xl lg:text-2xl font-bold font-primary text-white text-center">{benefit.title}</h3>
                 </div>
-                <p className="text-2xl md:text-2xl text-gray-400 text-center">{benefit.description}</p>
+                <p className="text-xl md:text-xl font-medium font-primary text-gray-400 text-center">{benefit.description}</p>
             </div>
           ))}
         </div>

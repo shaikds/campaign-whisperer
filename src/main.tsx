@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import HomePage from '../Pages/HomePage.jsx'
+import HomePage from '../Pages/HomePage'  
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import './index.css'

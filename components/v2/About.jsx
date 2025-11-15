@@ -19,8 +19,8 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 relative">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="order-2 md:order-1 transform hover:scale-105 transition-transform duration-500 text-center md:text-right">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 animate-slide-in-left">נעים להכיר, אני דניאל קרנירו</h2>
-            <div className="space-y-4 text-2xl md:text-2xl text-gray-700 leading-relaxed text-center md:text-right">
+            <h2 className="text-5xl md:text-4xl lg:text-5xl font-black font-primary text-gray-900 mb-8 animate-slide-in-left">נעים להכיר, אני דניאל קרנירו</h2>
+            <div className="space-y-4 text-2xl md:text-2xl font-medium font-primary text-gray-700 leading-relaxed text-center md:text-right">
               <p className="animate-fade-in-up" style={{animationDelay: '0.3s'}}>
                 לפני כמה שנים הייתי בדיוק במקום שלך. עבדתי שעות על גבי שעות על קמפיינים, אבל אף אחד לא באמת הבין כמה אחריות יש על הכתפיים של קמפיינר. לקוחות דרשו תוצאות, מנהלים לחצו, ובסוף - גם כשהכול עבד, עדיין הרגשתי שקוף.
               </p>
@@ -35,7 +35,7 @@ export default function About() {
                 במהלך 7 השנים האחרונות ניהלתי מאות קמפיינים hands-on בכל הפלטפורמות הגדולות (Meta, Google, TikTok, Outbrain, Taboola ועוד) - מתקציבים של מאות שקלים ועד מאות אלפים.
                 למדתי עשרות קורסים, ניסיתי הכול, והיום אני כאן כדי להעביר לך את כל זה - בליווי אמיתי, בגובה העיניים, ובזום אחד בכל פעם.
               </p>
-              <p className="font-semibold text-gray-900 bg-gradient-to-r from-purple-100 to-violet-100 border-r-4 border-purple-500 pr-4 py-3 rounded-md shadow-lg animate-fade-in-up" style={{animationDelay: '0.7s'}}>
+              <p className="font-bold font-primary text-gray-900 bg-gradient-to-r from-purple-100 to-violet-100 border-r-4 border-purple-500 pr-4 py-3 rounded-md shadow-lg animate-fade-in-up" style={{animationDelay: '0.7s'}}>
                המטרה שלי ברורה: שתפסיק להרגיש שקוף, ושתהפוך לשותף עסקי אמיתי - אחד שמוביל מהלכים, לא רק מבצע אותם.
               </p>
             </div>

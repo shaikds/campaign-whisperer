@@ -38,7 +38,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <div 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-2xl font-bold cursor-pointer text-white"
+            className="text-xl font-bold font-primary cursor-pointer text-white"
           >
             הלוחש לקמפיינרים
           </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => { e.preventDefault(); scrollTo(link.href); }}
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 font-medium font-primary hover:text-white transition-colors"
               >
                 {link.label}
               </a>
@@ -57,7 +57,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
               <Button
-                className="bg-gradient-to-r from-purple-600 to-violet-600 text-white font-bold rounded-lg px-6 py-3 hover:opacity-90 transition-opacity"
+                className="bg-gradient-to-r from-purple-600 to-violet-600 text-white font-bold font-primary rounded-lg px-6 py-3 hover:opacity-90 transition-opacity"
               >
                 שיחת ייעוץ חינם
               </Button>

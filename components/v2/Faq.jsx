@@ -42,10 +42,10 @@ export default function Faq() {
 
       <div className="max-w-3xl mx-auto px-4 relative flex flex-col items-center">
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-5xl md:text-4xl lg:text-5xl font-black font-primary text-white mb-3 animate-fade-in">
+          <h2 className="text-4xl md:text-3xl lg:text-4xl font-black font-primary text-white mb-3 animate-fade-in">
             שאלות נפוצות
           </h2>
-          <p className="text-gray-400 text-2xl md:text-2xl font-medium font-primary max-w-2xl mx-auto">
+          <p className="text-gray-400 text-xl md:text-xl font-medium font-primary max-w-2xl mx-auto">
             כל מה שאתה צריך לדעת לפני שמתחילים
           </p>
         </div>
@@ -57,13 +57,13 @@ export default function Faq() {
               className="bg-gray-800/40 border border-gray-700/40 rounded-xl hover:bg-gray-800/60 hover:border-purple-500/40 hover:shadow-md hover:shadow-purple-500/5 transition-all duration-300 animate-slide-up group cursor-pointer"
               style={{animationDelay: `${i * 0.1}s`}}
             >
-              <AccordionTrigger className="text-right text-white font-bold font-primary text-2xl md:text-xl p-4 md:p-5 hover:no-underline hover:text-purple-300 transition-colors duration-300 flex items-center gap-3 w-full cursor-pointer [&[data-state=open]]:pb-0">
+              <AccordionTrigger className="text-right text-white font-bold font-primary text-xl md:text-lg p-4 md:p-5 hover:no-underline hover:text-purple-300 transition-colors duration-300 flex items-center gap-3 w-full cursor-pointer [&[data-state=open]]:pb-0">
                 <span className="w-6 h-6 rounded-full bg-purple-500/20 text-purple-300 text-sm font-bold flex items-center justify-center group-hover:bg-purple-500/30 transition-colors">
                   {i + 1}
                 </span>
                 <span className="flex-1">{faq.q}</span>
               </AccordionTrigger>
-              <AccordionContent className="px-8 md:px-12 py-6 md:py-8 text-gray-300 text-base text-xl md:text-xl font-medium font-hebrew leading-relaxed ml-12 mr-4 text-center md:text-right">
+              <AccordionContent className="px-8 md:px-12 py-6 md:py-8 text-gray-300 text-sm text-lg md:text-lg font-medium font-hebrew leading-relaxed ml-12 mr-4 text-center md:text-right">
                 {faq.a}
               </AccordionContent>
             </AccordionItem>

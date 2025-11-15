@@ -7,6 +7,9 @@
   box-sizing: border-box;
 }
 
+/* Ensure fonts are loaded before applying */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Heebo:wght@400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
   font-family: 'Inter', 'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -309,6 +312,19 @@ a:focus-visible {
   .no-print {
     display: none !important;
   }
+}
+
+/* Font family utility classes */
+.font-primary {
+  font-family: 'Inter', 'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+.font-hebrew {
+  font-family: 'Heebo', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+.font-display {
+  font-family: 'Inter', 'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
 }
 
 /* Improved contrast for Hebrew text */

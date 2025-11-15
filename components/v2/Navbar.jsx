@@ -36,9 +36,9 @@ export default function Navbar() {
     <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-900/80 backdrop-blur-lg border-b border-gray-700/50' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <div 
+          <div
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-xl font-bold font-primary cursor-pointer text-white"
+            className="text-lg font-bold font-primary cursor-pointer text-white"
           >
             הלוחש לקמפיינרים
           </div>

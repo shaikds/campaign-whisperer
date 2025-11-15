@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 relative">
         {/* Brand Title */}
         <div className="text-center mb-12 md:mb-16">
-          <h1 className="text-4xl md:text-4xl lg:text-5xl font-black font-primary text-white mb-4">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-black font-primary text-white mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-400 to-purple-300">
               הלוחש לקמפיינרים
             </span>
@@ -35,17 +35,17 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-16 items-center animate-hero-enter">
           
           <div className="text-center md:text-right">
-            <h1 className="text-4xl md:text-4xl lg:text-5xl font-black font-primary text-white leading-tight mb-6">
+            <h1 className="text-3xl md:text-3xl lg:text-4xl font-black font-primary text-white leading-tight mb-6">
               מקמפיינר <span className="text-transparent bg-clip-text bg-gradient-to-l from-purple-400 via-violet-400 to-purple-300">שקוף</span>,<br/>לשותף עסקי שאי אפשר בלעדיו
             </h1>
-            <p className="text-2xl md:text-2xl font-medium font-primary text-gray-300 mb-6 max-w-xl mx-auto md:mx-0 text-center md:text-right">
+            <p className="text-xl md:text-xl font-medium font-primary text-gray-300 mb-6 max-w-xl mx-auto md:mx-0 text-center md:text-right">
               בוא להפוך מקמפיינר "טכני" לקמפיינר אמיתי, ששותף לערך, לאסטרטגיה ולשיווק שמייצר ערך אמיתי, שמצדיק ריטיינר גבוה יותר ובונה קריירה רווחית ויציבה.
             </p>
-            <p className="text-2xl md:text-2xl font-bold font-primary text-center text-white my-8 animate-fade-in-delay-2 bg-gradient-to-r from-purple-100/20 to-violet-100/20 border-r-4 border-purple-400 pr-4 py-3 rounded-md shadow-lg backdrop-blur-sm">
+            <p className="text-xl md:text-xl font-bold font-primary text-center text-white my-8 animate-fade-in-delay-2 bg-gradient-to-r from-purple-100/20 to-violet-100/20 border-r-4 border-purple-400 pr-4 py-3 rounded-md shadow-lg backdrop-blur-sm">
              "קמפיינר מקצועי יותר = מכניס יותר כסף ללקוח = מכניס יותר כסף לעצמך"
             </p>
-            <p className="text-2xl md:text-2xl font-medium font-primary text-gray-300 mb-8 max-w-xl mx-auto md:mx-0 text-center md:text-right">
-<span className="font-bold font-primary text-3xl md:text-3xl mb-4 inline-block">איך?</span><br/>
+            <p className="text-xl md:text-xl font-medium font-primary text-gray-300 mb-8 max-w-xl mx-auto md:mx-0 text-center md:text-right">
+<span className="font-bold font-primary text-2xl md:text-2xl mb-4 inline-block">איך?</span><br/>
               נרשמים לשיחות זום 1 על 1 איתי, ובתוך מספר שיעורים, אתה כבר תרגיש את הרמה המקצועית שלך עולה.
             </p>
           </div>

@@ -54,13 +54,13 @@ export default function Benefits() {
         {/* Header Section - Title and Subtext Above Everything */}
         <div className="text-center mb-20">
           {/* Title */}
-          <h2 className="text-5xl md:text-4xl lg:text-5xl font-black font-primary text-white mb-8 animate-fade-in">
+          <h2 className="text-4xl md:text-3xl lg:text-4xl font-black font-primary text-white mb-8 animate-fade-in">
             מה תקבלו בליווי 1 על 1?
           </h2>
 
           {/* Subtext - Centered */}
           <div className="mx-auto max-w-4xl">
-            <p className="text-2xl md:text-2xl font-medium font-primary text-gray-300 leading-relaxed animate-fade-in-delay">
+            <p className="text-xl md:text-xl font-medium font-primary text-gray-300 leading-relaxed animate-fade-in-delay">
               הליווי איתי הוא לא שיעור תאורטי - זו עבודה אמיתית על הקמפיינים שלך. בכל מפגש נתקדם צעד נוסף בדרך להפוך אותך לקמפיינר מקצועי, רגוע, שמבין לעומק את הנתונים ויודע איך לשלוט בתוצאות ובלקוחות שלו.
             </p>
           </div>
@@ -78,9 +78,9 @@ export default function Benefits() {
                     <div className="w-12 h-12 bg-gradient-to-br from-purple-600/20 to-violet-600/20 text-purple-400 rounded-xl flex items-center justify-center border border-purple-500/30 hover:scale-110 hover:rotate-12 transition-transform duration-300 mb-4">
                         <benefit.icon className="h-6 w-6" />
                     </div>
-                    <h3 className="text-2xl md:text-2xl lg:text-2xl font-bold font-primary text-white text-center">{benefit.title}</h3>
+                    <h3 className="text-xl md:text-xl lg:text-xl font-bold font-primary text-white text-center">{benefit.title}</h3>
                 </div>
-                <p className="text-xl md:text-xl font-medium font-primary text-gray-400 text-center">{benefit.description}</p>
+                <p className="text-lg md:text-lg font-medium font-primary text-gray-400 text-center">{benefit.description}</p>
             </div>
           ))}
         </div>

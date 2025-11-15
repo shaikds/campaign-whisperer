@@ -24,14 +24,14 @@ export default function Audience() {
       <div className="max-w-7xl mx-auto px-4 relative">
         {/* Header Section - Always on top */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-5xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 animate-slide-in-left">
+          <h2 className="text-4xl md:text-3xl lg:text-4xl font-black font-primary text-gray-900 mb-6 animate-slide-in-left">
             למי הליווי מתאים?
           </h2>
-          <p className="text-2xl md:text-2xl text-gray-700 leading-relaxed mb-8 animate-fade-in-up max-w-5xl mx-auto" style={{animationDelay: '0.3s'}}>
+          <p className="text-xl md:text-xl font-medium font-primary text-gray-700 leading-relaxed mb-8 animate-fade-in-up max-w-5xl mx-auto" style={{animationDelay: '0.3s'}}>
             הליווי נועד לקמפיינרים שרוצים להפסיק להיות 'מפעילי קמפיינים' - ולהתחיל לחשוב כמו אסטרטגים אמיתיים.
             לאלה שכבר יודעים איך להריץ קמפיינים, אבל רוצים להבין את ה'למה' שמאחוריהם - ואיך לקחת שליטה מלאה על התוצאות, הזמן והערך שלהם מול הלקוחות.
           </p>
-          <p className="text-2xl md:text-2xl text-gray-800 font-semibold animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+          <p className="text-xl md:text-xl font-bold font-primary text-gray-800 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             אם אתה:
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function Audience() {
               style={{animationDelay: `${i * 0.1 + 0.5}s`}}
             >
               <CheckCircle className="w-10 h-10 md:w-10 md:h-10 text-purple-600 flex-shrink-0" />
-              <span className="text-2xl md:text-2xl text-gray-800">{point}</span>
+              <span className="text-xl md:text-xl font-medium font-primary text-gray-800">{point}</span>
             </div>
           ))}
         </div>

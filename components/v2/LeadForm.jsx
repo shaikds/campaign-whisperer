@@ -89,14 +89,14 @@ export default function LeadForm({ id, theme = 'dark' }) {
       className={`backdrop-blur-xl rounded-2xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 ${theme === 'dark' ? 'animate-slide-in-right' : ''} ${currentTheme.container}`}
       dir="rtl"
     >
-      <h3 className={`text-3xl md:text-3xl font-bold font-primary text-center mb-2 ${currentTheme.title}`}>השאירו פרטים ובואו נדבר</h3>
-      <p className={`text-center mb-6 text-xl md:text-lg font-medium font-primary ${currentTheme.subtext}`}>הצעד הראשון לשינוי מתחיל כאן. השאירו פרטים לשיחת היכרות בחינם, ללא התחייבות.</p>
+      <h3 className={`text-2xl md:text-2xl font-bold font-primary text-center mb-2 ${currentTheme.title}`}>השאירו פרטים ובואו נדבר</h3>
+      <p className={`text-center mb-6 text-lg md:text-base font-medium font-primary ${currentTheme.subtext}`}>הצעד הראשון לשינוי מתחיל כאן. השאירו פרטים לשיחת היכרות בחינם, ללא התחייבות.</p>
 
       <form onSubmit={handleSubmit} className="space-y-4" dir="rtl">
         <Input 
           type="text" 
           placeholder="שם מלא" 
-          className={`h-12  text-lg rounded-lg transition-colors text-right ${currentTheme.input}`}
+          className={`h-12 text-base rounded-lg transition-colors text-right ${currentTheme.input}`}
           dir="rtl"
           value={formData.name}
           onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -105,7 +105,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
         <Input 
           type="email" 
           placeholder="אימייל" 
-          className={`h-12 text-lg rounded-lg transition-colors text-right ${currentTheme.input}`}
+          className={`h-12 text-base rounded-lg transition-colors text-right ${currentTheme.input}`}
           dir="rtl"
           value={formData.email}
           onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -115,7 +115,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
   type="text"
   inputMode="tel"
   placeholder="טלפון"
-  className={`h-12 rounded-lg text-lg transition-colors text-right ${currentTheme.input} ${phoneError ? 'border-red-500 focus:border-red-500' : ''}`}
+  className={`h-12 rounded-lg text-base transition-colors text-right ${currentTheme.input} ${phoneError ? 'border-red-500 focus:border-red-500' : ''}`}
   dir="rtl"
   value={formData.phone}
   onChange={handlePhoneChange}
@@ -143,7 +143,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
           type="submit"
           size="lg"
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r text-xl from-purple-600 to-violet-600 text-white font-bold font-primary rounded-lg h-14 hover:from-purple-700 hover:to-violet-700 hover:scale-105 transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+          className="w-full bg-gradient-to-r text-lg from-purple-600 to-violet-600 text-white font-bold font-primary rounded-lg h-14 hover:from-purple-700 hover:to-violet-700 hover:scale-105 transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
         >
           {isSubmitting ? (
             <div className="animate-spin w-4 h-4 border-2 border-white border-t-transparent rounded-full ml-2" />

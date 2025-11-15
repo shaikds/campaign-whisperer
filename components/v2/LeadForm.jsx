@@ -135,7 +135,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
             required
             style={{ accentColor: '#9333ea' }}
           />
-          <label htmlFor={`${id}-marketingConsent`} className={`text-sm2 font-medium font-primary ${currentTheme.subtext} text-right leading-relaxed flex-1 cursor-pointer`}>
+          <label htmlFor={`${id}-marketingConsent`} className={`text-sm font-medium font-primary ${currentTheme.subtext} text-right leading-relaxed flex-1 cursor-pointer`}>
             אני מסכים/ה לקבל ממך עדכונים, טיפים והצעות רלוונטיות מעת לעת
           </label>
         </div>
@@ -168,7 +168,7 @@ export default function LeadForm({ id, theme = 'dark' }) {
         </div>
       )}
 
-      <div className={`mt-6 space-y-2 text-sm2 md:text-sm2 font-medium font-primary ${currentTheme.subtext} flex flex-col items-center`}>
+      <div className={`mt-6 space-y-2 text-sm md:text-sm font-medium font-primary ${currentTheme.subtext} flex flex-col items-center`}>
         <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> שיחת היכרות ללא עלות וללא התחייבות</p>
         <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> הליווי מתקיים בזום בלבד</p>
         <p className="flex items-center gap-2 text-right"><Star className="w-3 h-3 text-yellow-400 flex-shrink-0"/> מספר המקומות לליווי אישי מוגבל</p>
